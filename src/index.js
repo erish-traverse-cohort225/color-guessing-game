@@ -14,7 +14,7 @@ const App = () => {
     const numIncorrect = useRef(0)
 
     function randomizeColor() {
-        const randomColors = Array.from({length: 3}, () => '#' + Math.floor(Math.random()*16777215).toString(16));
+        const randomColors = Array.from({length: 3}, () => "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);}));
         const randomColor = randomColors[Math.floor(Math.random() * randomColors.length)];
 
 

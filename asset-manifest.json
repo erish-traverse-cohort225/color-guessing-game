@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/color-guessing-game/static/css/main.10dff9d3.css",
-    "main.js": "/color-guessing-game/static/js/main.84a5f90f.js",
+    "main.js": "/color-guessing-game/static/js/main.b8017852.js",
     "index.html": "/color-guessing-game/index.html",
     "main.10dff9d3.css.map": "/color-guessing-game/static/css/main.10dff9d3.css.map",
-    "main.84a5f90f.js.map": "/color-guessing-game/static/js/main.84a5f90f.js.map"
+    "main.b8017852.js.map": "/color-guessing-game/static/js/main.b8017852.js.map"
   },
   "entrypoints": [
     "static/css/main.10dff9d3.css",
-    "static/js/main.84a5f90f.js"
+    "static/js/main.b8017852.js"
   ]
 }

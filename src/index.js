@@ -3,18 +3,12 @@ import {useState, useRef} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-//let numCorrect = 0;
-//let numIncorrect = 0;
-
 const App = () => {
     const [divText, setDivText] = useState('Start?')
     const [button1Text, setButton1Text] = useState('Start!');
     const [button2Text, setButton2Text] = useState('Start!!');
     const [button3Text, setButton3Text] = useState('Start!!!');
     const [divColor, setDivColor] = useState('#ffffff');
-
-    //const [numCorrect, setNumCorrect] = useState(0);
-    //const [numIncorrect, setNumIncorrect] = useState(0);
 
     const numCorrect = useRef(0)
     const numIncorrect = useRef(0)
@@ -34,11 +28,9 @@ const App = () => {
         if(e.target.innerHTML.includes("Start")){
             setDivText(e.target.innerHTML)
         } else if(e.target.innerHTML === divColor){
-            //setNumCorrect(previous => previous + 1)
             numCorrect.current++
             setDivText(`Correct! ${numCorrect.current} / ${numIncorrect.current}`)
         } else if(e.target.innerHTML !== divColor) {
-            //setNumIncorrect(previous => previous + 1)
             numIncorrect.current++
             setDivText(`Incorrect ${numCorrect.current} / ${numIncorrect.current}`)
         }
